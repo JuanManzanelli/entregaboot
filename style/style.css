@@ -1,0 +1,219 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.inicioBody {
+    background: linear-gradient(to left, rgb(238, 219, 109) 40%,black 60% );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#header {
+    background-color: rgb(238, 219, 109);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0px;
+    }
+
+#header .headerLogo img {
+        width: 180px;
+        height: auto;
+    }
+
+#header .headerMenu ul {
+    display: flex;
+    list-style: none;
+}    
+
+#header .headerMenu ul li a{
+    padding: 5px;
+    margin: 0 20px ;
+    color: white;
+    }
+#header .headerMenu ul li a:hover {
+    background-color: white;
+    color: rgb(238, 219, 109);
+}
+
+#novedadesCompras {
+    height: 550px;
+    width: 10px;
+    background-image: url(../img/novedades.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/* bootstrap */
+
+.slide {
+    margin-top: 50px;
+}
+
+.slide img {
+    height:  90vh;
+}
+
+
+.novedadesTitulo {
+    color: rgb(238, 219, 109);   
+}
+
+.clientes {
+    background-image: url(../img/nuestrosclientes.jpeg);
+    height: 60vh
+}
+
+.clientes {
+    background-repeat: no-repeat;
+    background-color: rgb(238, 219, 109);
+    background-position: center;
+}
+
+
+
+#footer {
+    color: white;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+
+#imagenes {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+     "int"
+     "pro"
+     "sen"
+     "dis"
+     "ind";
+ }
+
+ .interruptor {
+     grid-area: int;
+ }
+ 
+ .prolongador {
+     grid-area: pro;
+ }
+ 
+ .sensor {
+     grid-area: sen;
+ }
+
+ .distanciador {
+     grid-area: dis;
+ }
+
+ .industria {
+     grid-area: ind;
+ }
+
+ @media screen and (min-width: 768px) {
+     #imagenes {
+        grid-template-areas:
+        "int int int int int"
+        "pro pro sen sen sen"
+        "pro pro sen sen sen"
+        "dis dis dis dis dis"
+        "ind ind ind ind ind";
+     }
+ }
+
+
+
+
+
+.tituloCliente {
+    margin: 25px 0;
+}
+
+.tituloCliTabla {
+    margin: 45px 0px;
+}
+
+.tablaCliente {
+    background-color: rgb(238, 219, 109);
+    color: black;
+}
+
+
+
+#comprasTodo h2 {
+    margin: 45px 20px;
+    color: rgb(238, 219, 109);
+}
+#comprasTodo h3 {
+    margin: 25px 20px;
+    color: rgb(238, 219, 109);
+}
+#comprasTodo .imagenesCompras {
+    margin: 45px 25px;
+}
+#comprasTodo h4 {
+    margin: 45px 10px;
+    color: rgb(238, 219, 109);
+}
+
+#prove .completo {
+    background-color: rgb(238, 219, 109);
+    width: 1535px;
+    height: 535px;
+}
+#prove .completo h2 {
+    background-color: rgb(238, 219, 109);
+    color: white;
+    margin: 0 20px;
+}
+
+#prove .completo h3 {
+    color: white;
+    margin: 40px 660px;
+}
+#prove .completo .mapa {
+    margin: 40px 350px;
+}
+
+
+#publicacionEpec .publicacionTitulo {
+    color: rgb(238, 219, 109);
+   
+}
+
+#publicacionEpec .Youtube {
+    margin-top: 100px;
+}
+
+
+/* boot novedades */
+
+.slide2 {
+    margin-top: 100px;
+}
+
+.slide2 img {
+    height: 95vh;
+}
+
+.wifi {
+    margin: 60px;
+}
+
+.distan {
+    margin: 100px;
+}
